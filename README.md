@@ -1,12 +1,11 @@
 # STM32F103VGT6_WH2004
-This example helps you to discover STM32F103VGT6 Cortex-M3 device with WH2004 symbol display
-
 /**
   @page Demonstrations project on STM32F103VGT6 Cortex-M3
+  This example helps you to discover STM32F103VGT6 Cortex-M3 device with WH2004 symbol display
 
   @verbatim
   ******************************************************************************
-  * @file    readme.txt
+  * @file    readme
   * @author  KULIKOV V.G.
   * @brief   Description of STM32F103VGT6 UUN_VTC Demo
   ******************************************************************************
@@ -42,30 +41,6 @@ The SystemClock_Config() function is used to configure the system clock :
   - Организовано программное меню из нескольких окон. Для переключения между
 	окнами импользуется кнопка "OK". Короткое и длительное нажатие кнопки 
 	переключает в разные окна.
-	
-		 ------------------
-	|>| Окно приветствия |
-	|	|__________________|
-	|			|
-	|			|OK
-	|			\/
-	|	 ------------------                  ---------------------------
-	|	| Окно параметров  |<----Long_OK--->| Окно изменения параметров |
-	|	|__________________|                |___________________________|
-	|			|
-	|			|OK
-	|			\/
-	|	 ------------------                  -------------------------------
-	|	| Окно измерений   |<----Long_OK--->| Окно дополнительных измерений |
-	|	|__________________|                |_______________________________| 
-	|			|
-	|			|OK
-	|			\/
-	|	 ------------------                  ----------------------
-	|	| Окно событий     |<----Long_OK--->| Окно деталей события |
-	|	|__________________|                |______________________| 
-	|___________|
-	
   - Представлен пример вывода на дисплей меню с параметрами с прокруткой, 
 	навигация по которым возможна с помощью кнопок "UP" и "DOWN". Выбор и 
 	изменение параметра возможен при длительном нажатии кнопки "OK".
@@ -75,7 +50,6 @@ The SystemClock_Config() function is used to configure the system clock :
 	посмотреть в отдельном окне, выбрав событие и длительно нажав кнопку "OK".
   - Светодиод LED1 переключается каждые 100 мс. Светодиод LED2 переключается 
 	при смене окна меню индикатора WH200.
- 
 
 @note Care must be taken when using HAL_Delay(), this function provides accurate
       delay (in milliseconds) based on variable incremented in SysTick ISR.
@@ -87,17 +61,10 @@ The SystemClock_Config() function is used to configure the system clock :
 @note The application needs to ensure that the SysTick time base is always set to
       1 millisecond to have correct HAL operation.
 
-
-@par Keywords
-
-Demonstrations, Buttons, LEDs, Symbol display,
-
-
 @par Hardware and Software environment
 
   - This demonstration runs on STM32F103VGT6 Cortex-M3 device.
   
-
 @par How to use it ?
 
 In order to make the program work, you must do the following :
