@@ -1,13 +1,12 @@
 # STM32F103VGT6_WH2004
-/**
-  @page Demonstrations project on STM32F103VGT6 Cortex-M3
+  Demonstrations project on STM32F103VGT6 Cortex-M3.
   This example helps you to discover STM32F103VGT6 Cortex-M3 device with WH2004 symbol display
 
   @verbatim
   ******************************************************************************
   * @file    readme
   * @author  KULIKOV V.G.
-  * @brief   Description of STM32F103VGT6 UUN_VTC Demo
+  * @brief   Description of project on STM32F103VGT6 with WH2004
   ******************************************************************************
   @endverbatim
 
@@ -74,4 +73,4 @@ In order to make the program work, you must do the following :
  - Run the demonstration
 
  * <h3><center>&copy; COPYRIGHT KULIKOV V.G. </center></h3>
- */
+ 
