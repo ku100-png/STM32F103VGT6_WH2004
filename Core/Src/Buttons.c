@@ -2,7 +2,7 @@
   ******************************************************************************
   * File Name          : Buttons.c
   * Description        : This file provides code for the configuration
-  *                      buttons.
+  *                      buttons and encoder.
 	* Author						 : Kulikov V.G.
   ******************************************************************************
   **
@@ -43,6 +43,14 @@ uint8_t fl_but_Down;
 uint8_t fl_but_Ok;
 uint8_t fl_but_Ok_temp;
 uint8_t fl_but_Ok_long;
+
+uint8_t fl_Encoder_Enter;
+uint8_t fl_Encoder_Hi;
+uint8_t fl_Encoder_Low;
+
+unsigned long Encoder;
+unsigned long Encoder_old;
+extern TIM_HandleTypeDef htim4;
 
 
 void Buttons_control(void)
@@ -94,6 +102,31 @@ void Buttons_control(void)
 	}
 }
 
+
+void Encoder_control(void){
+	static unsigned char wait_encoder_enter = 0;
+	
+	Encoder_old = Encoder;
+	
+	if(Encoder_Enter){
+		wait_encoder_enter = 0;
+		fl_Encoder_Enter = OFF;
+	}else{
+		if(++wait_encoder_enter == 1){
+		fl_Encoder_Enter = ON;
+		//Add_event(but_Up);
+		}
+		if(wait_encoder_enter > 2) wait_encoder_enter = 2;
+	}
+	
+	Encoder = __HAL_TIM_GET_COUNTER(&htim4);
+	
+	if(Encoder_old > Encoder) fl_Encoder_Low = ON;
+	else fl_Encoder_Low = OFF;
+	
+	if(Encoder > Encoder_old) fl_Encoder_Hi = ON;
+	else fl_Encoder_Hi = OFF;
+}
 
 
 /************************ (C) COPYRIGHT NIPOM *****END OF FILE*****************/

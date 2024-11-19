@@ -56,6 +56,9 @@ extern uint8_t fl_but_Up;
 extern uint8_t fl_but_Down;
 extern uint8_t fl_but_Ok;
 extern uint8_t fl_but_Ok_long;
+extern uint8_t fl_Encoder_Enter;
+extern uint8_t fl_Encoder_Hi;
+extern uint8_t fl_Encoder_Low;
 extern struct Event events_array[];
 extern char* EventName[];
 
@@ -477,19 +480,21 @@ void Print_page_2_1(uint8_t n_param){
 		current_parametr = param_array[n_param]->value;
 	}
 	
-	if(fl_but_Up){
+	if(fl_but_Up||fl_Encoder_Hi){
 		fl_but_Up = OFF;
+		fl_Encoder_Hi = OFF;
 		if((current_parametr += param_array[n_param]->step) >= param_array[n_param]->max)
 			current_parametr = param_array[n_param]->max;
 	}
 	
-	if(fl_but_Down){
-		fl_but_Down = OFF ;
+	if(fl_but_Down||fl_Encoder_Low){
+		fl_but_Down = OFF;
+		fl_Encoder_Low = OFF;
 		if((current_parametr -= param_array[n_param]->step) <= param_array[n_param]->min)
 			current_parametr = param_array[n_param]->min;
 	}
 	
-	if(fl_but_Ok){
+	if(fl_but_Ok||fl_Encoder_Enter){
 		param_array[n_param]->value = current_parametr;
 		param_array[n_param]->print_funk_name(54, param_array[n_param]->value);
 	}

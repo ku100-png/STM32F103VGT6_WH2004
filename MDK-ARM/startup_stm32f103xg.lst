@@ -558,10 +558,11 @@ ARM Macro Assembler    Page 9
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=uun_vtc\startup_stm32f103xg.d -ouun_vtc\startup_stm32f103xg.o -I.\
-RTE\_UUN_VTC -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include -IC:\Keil
-_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include --predefine="__UVISION_VER
-SION SETA 526" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_XL SETA 1" --l
-ist=startup_stm32f103xg.lst startup_stm32f103xg.s
+RTE\_UUN_VTC -IC:\Users\Владимир\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\
+Core\Include -IC:\Users\Владимир\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4
+.1\Device\Include --predefine="__UVISION_VERSION SETA 535" --predefine="_RTE_ S
+ETA 1" --predefine="STM32F10X_XL SETA 1" --predefine="_RTE_ SETA 1" --list=star
+tup_stm32f103xg.lst startup_stm32f103xg.s
 
 
 

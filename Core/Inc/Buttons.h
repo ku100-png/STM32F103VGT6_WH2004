@@ -2,7 +2,7 @@
   ******************************************************************************
   * File Name          : Buttons.h
   * Description        : This file contains all the functions prototypes for 
-  *                      work with buttons.
+  *                      work with buttons and encoder.
 	* Author						 : Kulikov V.G.
   ******************************************************************************
   **
@@ -45,8 +45,10 @@
 #define Button_DOWN				HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9)
 #define Button_OK					HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_12)
 
+#define Encoder_Enter			HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)
 
 void Buttons_control(void);
+void Encoder_control(void);
 
 
 

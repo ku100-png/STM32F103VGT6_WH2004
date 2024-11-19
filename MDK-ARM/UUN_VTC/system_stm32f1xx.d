@@ -1,12 +1,12 @@
 uun_vtc\system_stm32f1xx.o: ../Core/Src/system_stm32f1xx.c
 uun_vtc\system_stm32f1xx.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 uun_vtc\system_stm32f1xx.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xg.h
-uun_vtc\system_stm32f1xx.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h
+uun_vtc\system_stm32f1xx.o: C:\Users\Владимир\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h
 uun_vtc\system_stm32f1xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-uun_vtc\system_stm32f1xx.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h
-uun_vtc\system_stm32f1xx.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h
-uun_vtc\system_stm32f1xx.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h
-uun_vtc\system_stm32f1xx.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h
+uun_vtc\system_stm32f1xx.o: C:\Users\Владимир\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h
+uun_vtc\system_stm32f1xx.o: C:\Users\Владимир\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h
+uun_vtc\system_stm32f1xx.o: C:\Users\Владимир\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h
+uun_vtc\system_stm32f1xx.o: C:\Users\Владимир\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h
 uun_vtc\system_stm32f1xx.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 uun_vtc\system_stm32f1xx.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 uun_vtc\system_stm32f1xx.o: ../Core/Inc/stm32f1xx_hal_conf.h
