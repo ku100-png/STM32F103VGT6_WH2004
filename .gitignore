@@ -2,6 +2,7 @@
 # Taken mostly from http://www.keil.com/support/man/docs/uv4/uv4_b_filetypes.htm
 
 # Folders
+Clock and TIM4 Config in CubeMX/
 RTE/
 DebugConfig/
 UUN_VTC/
@@ -13,6 +14,10 @@ UUN_VTC/
 *.uvgui
 *.uvgui.*
 *.uvguix.*
+
+# User's CubeMX files
+*.ioc
+*.mxproject
 
 # Listing files
 *.cod
